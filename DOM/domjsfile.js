@@ -37,3 +37,17 @@ container.appendChild(paragraph2);
 newContent.append(heading1);
 newContent.append(paragraph2);
 container.appendChild(newContent);
+
+const btn = document.querySelector('#btn');
+btn.addEventListener('click', function (e) {
+    e.target.style.background = 'blue';
+  });
+
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach((button) => {
+
+  button.addEventListener('dblclick', () => {
+    alert(button.id);
+  });
+});
